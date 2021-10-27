@@ -1,0 +1,660 @@
+body {
+  padding: 0px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+a {
+  color: #00B7FF;
+}
+
+/*!
+ * Bootstrap v2.3.2
+ *
+ * Copyright 2013 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world by @mdo and @fat.
+ */
+
+ #udeLogo{
+  width: 20%;
+  float: left;
+  height: auto;
+ }
+
+ #bifoLogo{
+  width: 20%;
+  height: auto;
+ }
+ 
+ #example_picture {
+  position: absolute;
+  z-index: 1000;
+ }
+
+ #example_net {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+ }
+
+#before_pic {
+  position: absolute;
+  top: 100px;
+  left: 40px;
+    z-index: 1000;
+
+}
+
+ #after_pic {
+  position: absolute;
+  top: 400px;
+  left: 40px;
+    z-index: 1000;
+
+ }
+
+ .pic {  
+  display: none;
+  position: absolute;
+  z-index: 1000;
+ }
+
+.slideText {
+  font-weight: 200;
+  font-size: 16px;
+  white-space: pre-wrap;
+}
+
+.boldSlideText {
+	font-weight: bold;
+	font-size: 16px;
+	white-space: pre-wrap;
+}
+
+.underlinedSlideText {
+  font-weight: 200;
+  font-size: 16px;
+  text-decoration: underline;
+  white-space: pre-wrap;
+}
+
+.datenschutzText{
+	font-size: 16px;
+	padding: 100px 250px 100px 250px;
+	
+}
+.borderBox{
+	/*specific properties due to SVG shapes*/
+	/*fill: transparent;*/
+	fill: #EEE;
+	stroke: #999;
+	stroke-width: 1px;
+	opacity: .7;
+}
+
+.questionText {
+  font-weight: 200;
+  font-size: 14px;
+  vertical-align: text-bottom;
+}
+
+.einrueckung{
+	padding: 0px 0px 0px 16px;
+}
+.node_text {
+  font-weight: 250;
+  font-size: 16px; 
+  stroke: none;
+  fill: #111;
+}
+
+.node {
+  fill: #9CD4D4;
+  stroke: #999;
+  stroke-width: 2px;
+}
+
+.link {
+  stroke: #AAA;
+  stroke-width: 4px;
+}
+
+.you_node {
+  background-color: blue;
+}
+
+#mf_box {
+  fill: none;
+  stroke: #999;
+}
+
+#gender {
+  position: absolute;
+  display: none;
+}
+
+#nederlands {
+  position: absolute;
+  display: none;
+}
+
+#exit {
+  position: absolute;
+  display: none;
+}
+
+#yesOrNo {
+  position: absolute;
+  display: none;
+}
+
+#maleOrFemale {
+  position: absolute;
+  display: none;
+}
+
+#talkFrequency {
+  position: absolute;
+  display: none;
+}
+
+#friendEducation {
+  position: absolute;
+  display: none;
+}
+
+#friendReligion {
+  position: absolute;
+  display: none;
+}
+
+#age {
+  position: absolute;
+  display: none;
+}
+
+#userEd {
+  position: absolute;
+  display: none;
+}
+
+#areHisp {
+  position: absolute;
+  display: none;
+}
+
+#race {
+  position: absolute;
+  display: none;
+}
+
+#friendRace {
+  position: absolute;
+  display: none;
+}
+
+#relat {
+  position: absolute;
+  display: none;
+}
+
+.input-group {
+  max-width:800px;
+}
+
+.no-wrap {
+  white-space:nowrap;
+}
+
+#name_input {
+  display: none;
+  position: absolute;
+  top: 550px;
+  left: 35%;
+}
+
+#filterfrage1 {
+  position: absolute;
+  display: none;
+}
+
+#filterfrage2 {
+  position: absolute;
+  display: none;
+}
+
+#userLiberal {
+  position: absolute;
+  display: none;
+}
+
+.slider {
+  width:800px;
+}
+
+.slider-label {
+  text-align:center;
+}
+
+.slider-left {
+  float:left;
+}
+
+.slider-right {
+  float:right;
+}
+
+.d3-slider-handle {
+  background: linear-gradient(to bottom, #CCC 0%, #DDD 100%) repeat scroll 0% 0% transparent !important;
+}
+
+.degrees {
+  font-family: 'monospace';
+}
+
+#whiteWarmth {
+  position: absolute;
+  display: none;
+}
+
+#blackWarmth {
+  position: absolute;
+  display: none;
+}
+
+#userEnjoy {
+  position: absolute;
+  display: none;
+}
+
+#userLikelihood {
+  position: absolute;
+  display: none;
+}
+
+#userExhaust {
+  position: absolute;
+  display: none;
+}
+
+#userMotivation {
+  position: absolute;
+  display: none;
+}
+
+#motivationText {
+
+}
+
+#timeBar {
+  z-index: 10;
+}
+
+.bar_target {
+  fill: #EEE;
+  stroke: #999;
+  stroke-width: 1px;
+  opacity: .7;
+}
+
+.bar_label {
+  fill: #E6E6E6;
+  stroke: #999;
+  stroke-width: 1px; /*bestimmt die Dicke der Umrandung des Labels */
+  opacity: .7;
+}
+
+.bar_text {
+  stroke: none;
+  fill: #555;
+  font-size: 15px; 
+  font-weight: 200;
+  white-space: pre-wrap;  /*Nutzt man um Umbruchzeichen innerhalb von JQuery Text zu verwenden*/
+}
+
+.backdrop {
+  fill: #E6E6E6;
+  stroke: #999;
+  stroke-width: 1px;
+  opacity: .7;
+}
+
+#qbox {
+  position: absolute;
+}
+
+.q_window {
+  stroke: #999;
+  stroke-width: 2px;
+  fill: none;
+  z-index: 100;
+}
+
+#blackFriends {
+  position: absolute;
+  display: none;
+}
+
+#friendsFriends {
+  position: absolute;
+  display: none;
+}
+
+#teilnehmercode {
+  position: absolute;
+  top: 600px;
+  left: 19%; 
+  /*display: none;*/
+}
+
+#artKommunikation {
+  position: absolute;
+  display: none;
+}
+
+#themaErhalteneInfos{
+	position: absolute;
+	display: none;
+}
+
+#digiSchulentwicklung{
+	position: absolute;
+	display: none;
+}
+
+#funktionenPersonen{
+	position: absolute;
+	display: none;
+}
+
+#wahrgenLernmöglichkeiten{
+	position: absolute;
+	display: none;
+}
+
+#gradFormalisierung{
+	position: absolute;
+	display: none;
+}
+
+#gradFormalisierung2{
+	position: absolute;
+	display: none;
+}
+
+#gradFormalisierung3{
+	position: absolute;
+	display: none;
+}
+
+#rahmenbedingungenInfoweitergabe1{
+	position: absolute;
+	display: none;
+}
+
+#rahmenbedingungenInfoweitergabe2{
+	position: absolute;
+	display: none;
+}
+
+#rahmenbedingungenInfoweitergabe3{
+	position: absolute;
+	display: none;
+}
+
+#seeFriends {
+  position: absolute;
+  display: none;
+}
+
+#nextDiv {
+  position: absolute;
+}
+
+#nonresponse_box {
+  display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+    cursor: pointer;
+    z-index: 1000; /* high z-index */
+    background: #000; /* fallback */
+    background: rgba(0,0,0,0.25);
+}
+
+#noID_box {
+  display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+    cursor: pointer;
+    z-index: 1000; /* high z-index */
+    background: #000; /* fallback */
+    background: rgba(0,0,0,0.25);
+}
+
+#onlyone_box {
+  display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+    cursor: pointer;
+    z-index: 1000; /* high z-index */
+    background: #000; /* fallback */
+    background: rgba(0,0,0,0.25);
+}
+
+#fewFriends_box {
+  display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+    cursor: pointer;
+    z-index: 1000; /* high z-index */
+    background: #000; /* fallback */
+    background: rgba(0,0,0,0.25);
+}
+
+#badYear_box {
+  display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+    cursor: pointer;
+    z-index: 1000; /* high z-index */
+    background: #000; /* fallback */
+    background: rgba(0,0,0,0.25);
+}
+
+#fewDragged_box {
+  display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+    cursor: pointer;
+    z-index: 1000; /* high z-index */
+    background: #000; /* fallback */
+    background: rgba(0,0,0,0.25);
+}
+
+#popup {
+  display: none;
+  background: #fff;
+  padding: 1%;
+  width: 40%;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  margin: 0 0 0 -20%; /* add negative left margin for half the width to center the div */
+  cursor: default;
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.9);
+}
+
+#onlyOnePopup {
+  display: none;
+  background: #fff;
+  padding: 1%;
+  width: 40%;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  margin: 0 0 0 -20%; /* add negative left margin for half the width to center the div */
+  cursor: default;
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.9);
+}
+
+#noIdPopup {
+  display: none;
+  background: #fff;
+  padding: 1%;
+  width: 40%;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  margin: 0 0 0 -20%;
+  cursor: default;
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.9);
+}
+
+#yearPopup {
+  display: none;
+  background: #fff;
+  padding: 1%;
+  width: 40%;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  margin: 0 0 0 -20%; /* add negative left margin for half the width to center the div */
+  cursor: default;
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.9);
+}
+
+#friendPopup {
+  display: none;
+  background: #fff;
+  padding: 1%;
+  width: 40%;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  margin: 0 0 0 -20%; /* add negative left margin for half the width to center the div */
+  cursor: default;
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.9);
+}
+
+#dragPopup {
+  display: none;
+  background: #fff;
+  padding: 1%;
+  width: 40%;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  margin: 0 0 0 -20%; /* add negative left margin for half the width to center the div */
+  cursor: default;
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.9);
+}
+
+
+ .close-btn {
+    cursor: pointer;
+    box-shadow: 0 0 4px rgba(0,0,0,0.3);
+    }
+    .close-btn:hover {
+      background: #05abe0;
+    }
+
+
+.popup_text {
+  color: red;
+  font-weight: bold;
+}
+
+#Next {
+  display: box;
+  position: absolute;
+  top: 550px;
+  left: 80%;
+}
+
+#submitForm {
+  width:100%;
+  height:100%;
+  position: absolute;
+  top:0px;
+  left:0px;
+  display:none
+}
+
+#submitForm form {
+  height:100%;
+}
+
+#submitButton {
+  position: absolute;
+  top: 550px;
+  left: 80%;
+}
+
+#footer{
+  Position: absolute;
+  text-decoration: underline;
+  top: 800px;
+  left: 5%;
+}
+
+.likert {
+    display:table;
+    padding-left:0px;
+}
+
+.likert li {
+    
+    display: table-cell;
+    list-style-type: none;
+}
+
+.likert-label {
+    line-height:50px;
+    padding:0px 10px;
+}
+
+.likert-label:first-child {
+    text-align:right;
+}
+
+.likert-row {
+    display: table-row;
+    padding-left:0px;
+}
+
+.likert-button {
+    border: 1px solid darkgrey;
+    border-left: 0px;
+    padding: 10px;
+}
+
+.likert-button:first-child {
+    border-left: 1px solid darkgrey;
+}
